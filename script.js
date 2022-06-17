@@ -1,3 +1,5 @@
+//Targeting html div containers
+
 const containerOne = document.querySelector('.containerOne');
 const containerTwo = document.querySelector('.containerTwo');
 const containerThree = document.querySelector('.containerThree');
@@ -15,19 +17,21 @@ const containerFourteen = document.querySelector('.containerFourteen');
 const containerFifteen = document.querySelector('.containerFifteen');
 const containerSixteen = document.querySelector('.containerSixteen');
 
+//Function used to create a basic div
+
 function createDivOne(){
 
-    var div = document.createElement('div');
-    div.style.width = '10px';
-    div.style.height = '10px';
+    let div = document.createElement('div');
+    div.style.width = '30px';
+    div.style.height = '30px';
     div.style.background = 'red';
-    div.style.color = 'black';
-    div.style.margin = '10px';
-    div.style.border = '10px';
-    div.style.padding = '10px';
+    div.style.margin = '5px';
+    
 
     containerOne.appendChild(div);
 };
+
+//For loop to create 16 divs in each row
 
 for(let i = 0; i < 16; i++) {
     createDivOne();
@@ -35,13 +39,11 @@ for(let i = 0; i < 16; i++) {
 
 function createDivTwo(){
 
-    var div = document.createElement('div');
-    div.style.width = '10px';
-    div.style.height = '10px';
+    let div = document.createElement('div');
+    div.style.width = '30px';
+    div.style.height = '30px';
     div.style.background = 'red';
-    div.style.margin = '10px';
-    div.style.border = '10px';
-    div.style.padding = '10px';
+    div.style.margin = '5px';
 
     containerTwo.appendChild(div);
 };
@@ -52,13 +54,11 @@ for(let i = 0; i < 16; i++) {
 
 function createDivThree(){
 
-    var div = document.createElement('div');
-    div.style.width = '10px';
-    div.style.height = '10px';
+    let div = document.createElement('div');
+    div.style.width = '30px';
+    div.style.height = '30px';
     div.style.background = 'red';
-    div.style.margin = '10px';
-    div.style.border = '10px';
-    div.style.padding = '10px';
+    div.style.margin = '5px';
 
     containerThree.appendChild(div);
 };
@@ -69,13 +69,11 @@ for(let i = 0; i < 16; i++) {
 
 function createDivFour(){
 
-    var div = document.createElement('div');
-    div.style.width = '10px';
-    div.style.height = '10px';
+    let div = document.createElement('div');
+    div.style.width = '30px';
+    div.style.height = '30px';
     div.style.background = 'red';
-    div.style.margin = '10px';
-    div.style.border = '10px';
-    div.style.padding = '10px';
+    div.style.margin = '5px';
 
     containerFour.appendChild(div);
 };
@@ -86,13 +84,11 @@ for(let i = 0; i < 16; i++) {
 
 function createDivFive(){
 
-    var div = document.createElement('div');
-    div.style.width = '10px';
-    div.style.height = '10px';
+    let div = document.createElement('div');
+    div.style.width = '30px';
+    div.style.height = '30px';
     div.style.background = 'red';
-    div.style.margin = '10px';
-    div.style.border = '10px';
-    div.style.padding = '10px';
+    div.style.margin = '5px';
 
     containerFive.appendChild(div);
 };
@@ -103,13 +99,11 @@ for(let i = 0; i < 16; i++) {
 
 function createDivSix(){
 
-    var div = document.createElement('div');
-    div.style.width = '10px';
-    div.style.height = '10px';
+    let div = document.createElement('div');
+    div.style.width = '30px';
+    div.style.height = '30px';
     div.style.background = 'red';
-    div.style.margin = '10px';
-    div.style.border = '10px';
-    div.style.padding = '10px';
+    div.style.margin = '5px';
 
     containerSix.appendChild(div);
 };
@@ -120,13 +114,11 @@ for(let i = 0; i < 16; i++) {
 
 function createDivSeven(){
 
-    var div = document.createElement('div');
-    div.style.width = '10px';
-    div.style.height = '10px';
+    let div = document.createElement('div');
+    div.style.width = '30px';
+    div.style.height = '30px';
     div.style.background = 'red';
-    div.style.margin = '10px';
-    div.style.border = '10px';
-    div.style.padding = '10px';
+    div.style.margin = '5px';
 
     containerSeven.appendChild(div);
 };
@@ -137,13 +129,11 @@ for(let i = 0; i < 16; i++) {
 
 function createDivEight(){
 
-    var div = document.createElement('div');
-    div.style.width = '10px';
-    div.style.height = '10px';
+    let div = document.createElement('div');
+    div.style.width = '30px';
+    div.style.height = '30px';
     div.style.background = 'red';
-    div.style.margin = '10px';
-    div.style.border = '10px';
-    div.style.padding = '10px';
+    div.style.margin = '5px';
 
     containerEight.appendChild(div);
 };
@@ -154,13 +144,11 @@ for(let i = 0; i < 16; i++) {
 
 function createDivNine(){
 
-    var div = document.createElement('div');
-    div.style.width = '10px';
-    div.style.height = '10px';
+    let div = document.createElement('div');
+    div.style.width = '30px';
+    div.style.height = '30px';
     div.style.background = 'red';
-    div.style.margin = '10px';
-    div.style.border = '10px';
-    div.style.padding = '10px';
+    div.style.margin = '5px';
 
     containerNine.appendChild(div);
 };
@@ -171,13 +159,11 @@ for(let i = 0; i < 16; i++) {
 
 function createDivTen(){
 
-    var div = document.createElement('div');
-    div.style.width = '10px';
-    div.style.height = '10px';
+    let div = document.createElement('div');
+    div.style.width = '30px';
+    div.style.height = '30px';
     div.style.background = 'red';
-    div.style.margin = '10px';
-    div.style.border = '10px';
-    div.style.padding = '10px';
+    div.style.margin = '5px';
 
     containerTen.appendChild(div);
 };
@@ -188,13 +174,11 @@ for(let i = 0; i < 16; i++) {
 
 function createDivEleven(){
 
-    var div = document.createElement('div');
-    div.style.width = '10px';
-    div.style.height = '10px';
+    let div = document.createElement('div');
+    div.style.width = '30px';
+    div.style.height = '30px';
     div.style.background = 'red';
-    div.style.margin = '10px';
-    div.style.border = '10px';
-    div.style.padding = '10px';
+    div.style.margin = '5px';
 
     containerEleven.appendChild(div);
 };
@@ -205,13 +189,11 @@ for(let i = 0; i < 16; i++) {
 
 function createDivTwelve(){
 
-    var div = document.createElement('div');
-    div.style.width = '10px';
-    div.style.height = '10px';
+    let div = document.createElement('div');
+    div.style.width = '30px';
+    div.style.height = '30px';
     div.style.background = 'red';
-    div.style.margin = '10px';
-    div.style.border = '10px';
-    div.style.padding = '10px';
+    div.style.margin = '5px';
 
     containerTwelve.appendChild(div);
 };
@@ -222,13 +204,11 @@ for(let i = 0; i < 16; i++) {
 
 function createDivThirteen(){
 
-    var div = document.createElement('div');
-    div.style.width = '10px';
-    div.style.height = '10px';
+    let div = document.createElement('div');
+    div.style.width = '30px';
+    div.style.height = '30px';
     div.style.background = 'red';
-    div.style.margin = '10px';
-    div.style.border = '10px';
-    div.style.padding = '10px';
+    div.style.margin = '5px';
 
     containerThirteen.appendChild(div);
 };
@@ -239,13 +219,11 @@ for(let i = 0; i < 16; i++) {
 
 function createDivFourteen(){
 
-    var div = document.createElement('div');
-    div.style.width = '10px';
-    div.style.height = '10px';
+    let div = document.createElement('div');
+    div.style.width = '30px';
+    div.style.height = '30px';
     div.style.background = 'red';
-    div.style.margin = '10px';
-    div.style.border = '10px';
-    div.style.padding = '10px';
+    div.style.margin = '5px';
 
     containerFourteen.appendChild(div);
 };
@@ -256,13 +234,11 @@ for(let i = 0; i < 16; i++) {
 
 function createDivFifteen(){
 
-    var div = document.createElement('div');
-    div.style.width = '10px';
-    div.style.height = '10px';
+    let div = document.createElement('div');
+    div.style.width = '30px';
+    div.style.height = '30px';
     div.style.background = 'red';
-    div.style.margin = '10px';
-    div.style.border = '10px';
-    div.style.padding = '10px';
+    div.style.margin = '5px';
 
     containerFifteen.appendChild(div);
 };
@@ -273,13 +249,11 @@ for(let i = 0; i < 16; i++) {
 
 function createDivSixteen(){
 
-    var div = document.createElement('div');
-    div.style.width = '10px';
-    div.style.height = '10px';
+    let div = document.createElement('div');
+    div.style.width = '30px';
+    div.style.height = '30px';
     div.style.background = 'red';
-    div.style.margin = '10px';
-    div.style.border = '10px';
-    div.style.padding = '10px';
+    div.style.margin = '5px';
 
     containerSixteen.appendChild(div);
 };
