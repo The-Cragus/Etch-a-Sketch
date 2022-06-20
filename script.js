@@ -16,8 +16,21 @@ function createGrid(rows, columns){
         div.style.height = '30px';
         div.style.background = 'black';
         div.style.border = '1px solid #ddd';
+
+        function random(number) {
+            return Math.floor(Math.random() * (number+1));
+          }
+          
+        div.addEventListener('mouseover', () => {
+            const rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
+            div.style.backgroundColor = rndCol;
+        });
+
         container.appendChild(div);
     };
 };
 
 createGrid(16, 16);
+
+
+

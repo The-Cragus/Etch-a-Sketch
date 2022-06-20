@@ -3,20 +3,24 @@
     --grid-rows: 1;
 }
 
+body {
+    background-color: lightslategray;
+}
+
 h1 {
     display: flex;
     justify-content: center;
+    color: whitesmoke;
 }
 
 .buttons {
     display: flex;
     justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .container {
     display: grid;
-    width: 500px;
     grid-template-rows: repeat(var(--grid-rows), 1fr);
     grid-template-columns: repeat(var(--grid-columns), 1fr);
     place-items: center;
@@ -25,4 +29,8 @@ h1 {
 .outerShell {
     display: flex;
     justify-content: center;
+}
+
+.myColor {
+    background-color: yellow;
 }
