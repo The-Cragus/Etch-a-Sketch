@@ -1,82 +1,17 @@
-/* Targeting each html container in order to flex and align divs */
 
-.containerOne {
-    display: flex;
-    justify-content: center;
 
-}
-
-.containerTwo {
+h1 {
     display: flex;
     justify-content: center;
 }
 
-.containerThree {
+#grid {
     display: flex;
     justify-content: center;
 }
 
-.containerFour {
+.container {
     display: flex;
     justify-content: center;
-}
-
-.containerFive {
-    display: flex;
-    justify-content: center;
-}
-
-.containerSix {
-    display: flex;
-    justify-content: center;
-}
-
-.containerSeven {
-    display: flex;
-    justify-content: center;
-}
-
-.containerEight {
-    display: flex;
-    justify-content: center;
-}
-
-.containerNine {
-    display: flex;
-    justify-content: center;
-}
-
-.containerTen {
-    display: flex;
-    justify-content: center;
-}
-
-.containerEleven {
-    display: flex;
-    justify-content: center;
-}
-
-.containerTwelve {
-    display: flex;
-    justify-content: center;
-}
-
-.containerThirteen {
-    display: flex;
-    justify-content: center;
-}
-
-.containerFourteen {
-    display: flex;
-    justify-content: center;
-}
-
-.containerFifteen {
-    display: flex;
-    justify-content: center;
-}
-
-.containerSixteen {
-    display: flex;
-    justify-content: center;
+    flex-flow: wrap;
 }
