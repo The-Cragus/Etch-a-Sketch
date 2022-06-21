@@ -12,10 +12,6 @@ function createGrid(rows, columns){
     
     for(i = 0; i < (rows * columns); i++) {
         let div = document.createElement('div');
-        div.style.width = '20px';
-        div.style.height = '20px';
-        div.style.background = 'black';
-        div.style.border = '1px solid #ddd';
 
         function random(number) {
             return Math.floor(Math.random() * (number+1));
@@ -26,24 +22,39 @@ function createGrid(rows, columns){
             div.style.backgroundColor = rndCol;
         });
 
-        container.appendChild(div);
+        container.appendChild(div).className = 'grid-item';
     };
 };
 
 createGrid(16, 16);
 
-function buttonClick() {
-    
-    let question = prompt('How many squares would you like per side of your grid? (Max of 100)');
+//Resets the divs in order to clear past grids
 
+function reset() {
+    document
+      .querySelectorAll(".grid-item")
+      .forEach((e) => e.parentNode.removeChild(e));
+  }
+
+//On click event that generates a new grid based on the number entered
+
+function buttonClick() {
+    let question = prompt('How many squares would you like per side of your grid? (Max of 100)');
+    if(question < 0) {
+        alert('Error');
+    };
     if(question > 100) {
-        alert('Error: You can\'t choose more than 100!')
-    } else if(question <= 100) {
+        alert('Error');
+    };
+    if(question === null || question === '' || question == String) {
+        alert('Error');
+    };
+    if(question <= 100) {
+        reset();
         createGrid(question, question);
-    } else {
-        createGrid(16, 16);
-    }
+    };
 };
+
 
 
 
