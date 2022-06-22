@@ -36,25 +36,15 @@ function reset() {
       .forEach((e) => e.parentNode.removeChild(e));
   }
 
-//On click event that generates a new grid based on the number entered
+//On click event generates a new grid based on the number entered
 
 function buttonClick() {
     let question = prompt('How many squares would you like per side of your grid? (Max of 100)');
-    if(question < 0) {
-        alert('Error');
-    };
-    if(question > 100) {
-        alert('Error');
-    };
-    if(question === null || question === '' || question == String) {
-        alert('Error');
+    if(question < 0 || question > 100 || question === null || question === '' || question == String) {
+        alert('Error: Please enter a number between 1 and 100');
     };
     if(question <= 100) {
         reset();
         createGrid(question, question);
     };
 };
-
-
-
-
